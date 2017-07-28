@@ -1,0 +1,82 @@
+<DOCTYPE html>
+
+	<html>
+
+	<style type="text/css">
+	#outerbox {
+     padding: 10px 20px 10px 20px;
+     border: 5px solid black;
+     margin: 100px 100px;
+     padding-bottom: 200px;
+        background-color: azure;
+	}
+	.input{
+		margin-top: 25px;
+	}
+	#answer {
+	margin-top: 25px;
+	}
+	</style>
+<head>
+<title> CALCULATOR</title>
+</head>
+
+<body>
+
+
+<div id="outerbox">
+	<input type="text" id="value1" placeholder="INPUT1" name="value1">
+	<input type="text" id="value2" placeholder="INPUT2"  name="value2">
+       
+    <div class="input">
+         <input  type="button" name="Sumbit" value="ADD" onclick="javascript:addNumbers()">
+        <input  type="button" name="Sumbit" value="SUBSTRACT" onclick="javascript:subNumbers()">
+        <input  type="button" name="Sumbit" value="MULTIPICATION" onclick="javascript:mulNumbers()">
+        <input type="button" name="Sumbit" value="DIVISION" onclick="javascript:divisionNumbers()">
+        </div>
+    <div>
+        <input type="text" id="answer" name="answer" placeholder="OUTPUT">
+
+    </div>
+</div>  
+
+    <script type="text/javascript">
+                    function addNumbers()
+                    {
+                            var val1 = parseInt(document.getElementById("value1").value);
+                            var val2 = parseInt(document.getElementById("value2").value);
+                            var ans = document.getElementById("answer");
+                            ans.value = val1 + val2;
+                    } 
+        
+                    function subNumbers()
+                    {
+                            var val1 = parseInt(document.getElementById("value1").value);
+                            var val2 = parseInt(document.getElementById("value2").value);
+                            var ans = document.getElementById("answer");
+                            ans.value = val1 - val2;
+                    }
+        
+                    function mulNumbers()
+                    {
+                            var val1 = parseInt(document.getElementById("value1").value);
+                            var val2 = parseInt(document.getElementById("value2").value);
+                            var ans = document.getElementById("answer");
+                            ans.value = val1 * val2;
+                    } 
+        
+                    function divisionNumbers()
+                    {
+                            var val1 = parseInt(document.getElementById("value1").value);
+                            var val2 = parseInt(document.getElementById("value2").value);
+                            var ans = document.getElementById("answer");
+                            ans.value = val1 / val2;
+                    }
+        
+        
+     </script>
+</body>
+    </html>
+
+
+
